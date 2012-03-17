@@ -23,7 +23,7 @@ Requisiti
 * `python-mechanize`
 * `BeautifulSoup`
 
-Sul sistema operativo Ubuntu è possibile installare `mechanize` e `BeautifulSoup` con i il comando `sudo apt-get install python-mechanize python-beautifulsoup`.
+Sul sistema operativo Ubuntu è possibile installare `mechanize` e `BeautifulSoup` con i il comando `sudo apt-get install python-mechanize python-beautifulsoup`
 
 Questo script, ovviamente, necessita di una connessione a Internet.
 
@@ -35,11 +35,13 @@ Questo script prende un unico argomento, che corrisponde al giornale radio (1, 2
 
 Piattaforme su cui questo script è stato testato
 ------------------------------------------------
-GNU/Linux, distributionze Ubuntu 11.10 Oneiric.
+GNU/Linux, distribuzione Ubuntu 11.10 (Oneiric).
 
-Autore
-------
-Samuele Artuso <samuele.a@gmail.com>
+Autore e contatti
+-----------------
+Questo script è stato scritto da Samuele Artuso.
+
+Puoi inviare richieste di miglioramento, bug reports, suggerimenti e critiche all'indirizzo e-mail <samuele.a@gmail.com>.
 
 Licenza
 -------
@@ -50,7 +52,3 @@ This program is free software: you can redistribute it and/or modify it under th
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-Contatti
---------
-Puoi inviare richieste di miglioramento, bug reports, suggerimenti e critiche all'indirizzo e-mail <samuele.a@gmail.com>.
