@@ -9,7 +9,7 @@ Il [Giornale Radio Rai](http://www.grr.rai.it "Giornale Radio Rai") (**GRR**) è
 
 Il Giornale Radio Rai è disponibile su internet all'indirizzo [www.grr.rai.it ](http://www.grr.rai.it "www.grr.rai.it"), ma il servizio presenta alcune limitazioni:
 
-* Per ascoltare le ultime edizioni dal proprio browser, è innanzitutto necessario installare [Microsoft Silverlight](http://www.microsoft.com/silverlight/ "Microsoft Silverlight"), un plugin proprietario che non è — fra l'altro — disponibile per tutte le piattaforme software. Esiste un alternativa open source a Silverlight, [Moonlight](http://www.mono-project.com/moonlight "Moonlight"), ma spesso la sua installazione può essere problematica, o per lo meno questo è quello che è accade sul laptop dell'autore di questo script :)
+* Per ascoltare le ultime edizioni dal proprio browser, è innanzitutto necessario installare [Microsoft Silverlight](http://www.microsoft.com/silverlight/ "Microsoft Silverlight"), un plugin proprietario che non è — fra l'altro — disponibile per tutte le piattaforme software. Esiste un'alternativa open source a Silverlight, [Moonlight](http://www.mono-project.com/moonlight "Moonlight"), ma spesso la sua installazione può essere problematica, o per lo meno questo è quello che è accade sul laptop dell'autore di questo script :)
 * Non sono disponibili dei podcast.
 
 Cosa fa questo script
@@ -19,9 +19,11 @@ Questo script avvia il playback dell'ultima edizione disponibile del Giornale Ra
 Requisiti
 ---------
 * Python 2.6
+* VLC Media Player 1.0+
 * `python-mechanize`
 * `BeautifulSoup`
-* VLC Media Player 1.0+
+
+Sul sistema operativo Ubuntu è possibile installare `mechanize` e `BeautifulSoup` con i il comando `sudo apt-get install python-mechanize python-beautifulsoup`.
 
 Questo script, ovviamente, necessita di una connessione a Internet.
 
