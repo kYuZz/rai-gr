@@ -14,7 +14,7 @@ Il Giornale Radio Rai è disponibile su internet all'indirizzo [www.grr.rai.it ]
 
 Cosa fa questo script
 ---------------------
-Questo script avvia il playback dell'ultima edizione disponibile del Giornale Radio Rai prescelto (1, 2 o 3) con VLC Media Player.
+Questo è un *quick and dirty* script che avvia il playback dell'ultima edizione disponibile del Giornale Radio Rai prescelto (1, 2 o 3) con VLC Media Player.
 
 Requisiti
 ---------
