@@ -6,6 +6,8 @@ import mechanize
 import os
 import sys
 
+MEDIA_PLAYER = 'mplayer'
+
 if len(sys.argv) != 2:
 	print 'Errore: devi specificare quale giornare radio vuoi ascoltare.'
 	sys.exit(1)
@@ -44,6 +46,6 @@ for i in script_lines:
 url = line.split("'")[1]
 
 print 'Stream URL found! %s' % url
-print 'Opening VLC...'
-cmd = 'vlc "%s"' % url
+print 'Playing media...'
+cmd = '%s "%s"' % (MEDIA_PLAYER, url)
 os.system(cmd)
