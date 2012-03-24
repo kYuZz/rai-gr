@@ -45,7 +45,20 @@ for i in script_lines:
 		line = i
 url = line.split("'")[1]
 
-print 'Stream URL found! %s' % url
-print 'Playing media...'
-cmd = '%s "%s"' % (MEDIA_PLAYER, url)
-os.system(cmd)
+print 'Opening URL %s...' % url
+f = urllib2.urlopen(url)
+r = f.readlines()
+f.close()
+
+url = r[0]
+
+if url[-4:] == '.mp3':
+    print 'Stream URL found! %s' % url
+    print 'Playing media...'
+    cmd = '%s "%s"' % (MEDIA_PLAYER, url)
+    os.system(cmd)
+else:
+    print 'ERROR: Stream URL non found!'
+
+
+
