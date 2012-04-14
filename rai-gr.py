@@ -47,18 +47,14 @@ url = line.split("'")[1]
 
 print 'Opening URL %s...' % url
 f = urllib2.urlopen(url)
-r = f.readlines()
+t = f.info().gettype() # get mime type
 f.close()
 
-url = r[0]
-
-if url[-4:] == '.mp3':
-    print 'Stream URL found! %s' % url
-    print 'Playing media...'
-    cmd = '%s "%s"' % (MEDIA_PLAYER, url)
-    os.system(cmd)
+if t == 'audio/mpeg':
+	print 'Stream URL found!'
+	cmd = "%s '%s'" % (MEDIA_PLAYER, url)
+	os.system(cmd)
 else:
-    print 'ERROR: Stream URL non found!'
-
+	print 'Error: Stream URL not found!'
 
 
